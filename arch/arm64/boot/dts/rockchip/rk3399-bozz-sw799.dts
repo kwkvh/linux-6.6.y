@@ -59,6 +59,16 @@
 	};
 
 
+	vcca1v8_s3: vcc1v8-s3 {
+		compatible = "regulator-fixed";
+		regulator-name = "vcca1v8_s3";
+		regulator-min-microvolt = <1800000>;
+		regulator-max-microvolt = <1800000>;
+		regulator-always-on;
+		regulator-boot-on;
+	};
+
+
 
 	vcc_phy: vcc-phy {
 		compatible = "regulator-fixed";
