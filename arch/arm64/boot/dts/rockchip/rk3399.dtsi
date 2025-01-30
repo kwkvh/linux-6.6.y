@@ -243,9 +243,13 @@
 		};
 	};
 
-	display-subsystem {
+	display-subsystem: display-subsystem {
 		compatible = "rockchip,display-subsystem";
 		ports = <&vopl_out>, <&vopb_out>;
+		clocks = <&cru PLL_VPLL>, <&cru PLL_CPLL>;
+		clock-names = "hdmi-tmds-pll", "default-vop-pll";
+		devfreq = <&dmc>;
+		status = "disabled";
 	};
 
 	dmc: memory-controller {
