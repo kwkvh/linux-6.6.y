@@ -2147,7 +2147,7 @@
 		};
 	};
 
-	edp: dp@ff970000 {
+	edp: edp@ff970000 {
 		compatible = "rockchip,rk3399-edp";
 		reg = <0x0 0xff970000 0x0 0x8000>;
 		interrupts = <GIC_SPI 10 IRQ_TYPE_LEVEL_HIGH 0>;
